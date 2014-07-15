@@ -9,7 +9,7 @@ var helmholtz = require('helmholtz');
 
 helmholtz(',,C') //  -> [ 0, 0 ]
 helmholtz('d#\'') // -> [ -1, 9 ]
-helmholtz('a\'\') // -> [ 4, 3 ]
+helmholtz('a\'\'') // -> [ 4, 3 ]
 ```
 
 ## usage
