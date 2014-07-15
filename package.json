@@ -1,0 +1,32 @@
+{
+  "name": "helmholtz",
+  "version": "1.0.0",
+  "description": "Parses note names in Helmholtz format",
+  "main": "index.js",
+  "scripts": {
+    "test": "tape test/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/saebekassebil/helmholtz.git"
+  },
+  "keywords": [
+    "helmholtz",
+    "music",
+    "parser",
+    "theory"
+  ],
+  "author": {
+    "name": "Jakob Miland <saebekassebil>",
+    "email": "saebekassebil@gmail.com",
+    "url": "http://saebekassebil.me"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/saebekassebil/helmholtz/issues"
+  },
+  "homepage": "https://github.com/saebekassebil/helmholtz",
+  "devDependencies": {
+    "tape": "^2.13.3"
+  }
+}
