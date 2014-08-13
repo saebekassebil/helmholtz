@@ -1,11 +1,5 @@
 var coords = require('notecoord');
-var accidentals = {
-  'bb': -2,
-  'b': -1,
-  '': 0,
-  '#': 1,
-  'x': 2
-};
+var accval = require('accidental-value');
 
 module.exports = function helmholtz(name) {
   var name = name.replace(/\u2032/g, "'").replace(/\u0375/g, ',');
@@ -36,13 +30,12 @@ module.exports = function helmholtz(name) {
   } else
     octave = lower ? 3 : 2;
 
-  var accidentalValue = accidentals[parts[3].toLowerCase()];
+  var accidentalValue = accval.interval([parts[3].toLowerCase()]);
   var coord = coords(note.toLowerCase());
 
-  // The interval of going one semitone up is [-4, 7] (octaves, fifths)
   coord[0] += octave;
-  coord[0] += -4 * accidentalValue;
-  coord[1] += 7 * accidentalValue;
+  coord[0] += accidentalValue[0];
+  coord[1] += accidentalValue[1];
 
   return coord;
 };

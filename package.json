@@ -26,6 +26,10 @@
     "url": "https://github.com/saebekassebil/helmholtz/issues"
   },
   "homepage": "https://github.com/saebekassebil/helmholtz",
+  "dependencies": {
+    "accidental-value": "^1.0.0",
+    "notecoord": "^1.0.1"
+  },
   "devDependencies": {
     "tape": "^2.13.3"
   }
