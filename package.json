@@ -1,6 +1,6 @@
 {
   "name": "helmholtz",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Parses note names in Helmholtz format",
   "main": "index.js",
   "scripts": {
