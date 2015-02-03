@@ -1,6 +1,5 @@
 var coords = require('notecoord');
 var accval = require('accidental-value');
-var A4 = [3, 3];
 
 module.exports = function helmholtz(name) {
   var name = name.replace(/\u2032/g, "'").replace(/\u0375/g, ',');
@@ -35,8 +34,8 @@ module.exports = function helmholtz(name) {
   var coord = coords(note.toLowerCase());
 
   coord[0] += octave;
-  coord[0] += accidentalValue[0] - A4[0];
-  coord[1] += accidentalValue[1] - A4[1];
+  coord[0] += accidentalValue[0] - coords.A4[0];
+  coord[1] += accidentalValue[1] - coords.A4[1];
 
   return coord;
 };
