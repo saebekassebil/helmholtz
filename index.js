@@ -31,7 +31,7 @@ module.exports = function helmholtz(name) {
   } else
     octave = lower ? 3 : 2;
 
-  var accidentalValue = accval.interval([parts[3].toLowerCase()]);
+  var accidentalValue = accval.interval(parts[3].toLowerCase());
   var coord = coords(note.toLowerCase());
 
   coord[0] += octave;
